@@ -1,16 +1,26 @@
 from motor import Motor
 from vehiculo import Vehiculo 
 from simulador import Simulador
+from calculadora import Calculadora
 
-L = Motor("45756", 1000)
-U = Motor("33687", 1000)
+Z= Calculadora(3, 4)
 
-familiar = Vehiculo("46578GYH","azul","nissan","2015","gas",1000,40.1, True) 
-rapido = Vehiculo("374654STB","rojo","toyosa","2010","gas",1000,40.4,True)
+#L = Motor("45756", 1000)
+#U = Motor("33687", 1000)
 
-familiar.poner_motor(L)
-rapido.poner_motor(U)
+#familiar = Vehiculo("46578GYH","azul","nissan","2015","gas",1000,40.1, True) 
+#rapido = Vehiculo("374654STB","rojo","toyosa","2010","gas",1000,40.4,True)
 
-lista=[familiar,rapido]
-S = Simulador(lista)
-S.iniciar_simulacion(2)
+
+#familiar.poner_motor(L)
+#rapido.poner_motor(U)
+
+#lista=[familiar,rapido]
+#S = Simulador(lista)
+#S.iniciar_simulacion(2)
+
+Z.suma()
+Z.resta()
+Z.multiplicacion()
+Z.division()
+Z.pontencia()
